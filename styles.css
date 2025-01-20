@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: large;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+.nav-marvio{
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+li{
+    display: flex;
+    float: inline-start;
+    overflow: hidden;
+}
+li a{
+    padding: 15px;
+    display: block;
+    color: white;
+}
+li a:hover{
+    color: darkgreen;
+}
+
+.contact_btn{
+    padding: 10px 30px;
+    color: black;
+    margin-left: 8rem;
+    background-color:darkgreen ;
+    border-radius: 30px;
+    font-size: large;
+    cursor: pointer;
+    transition: 1s;
+}
+.contact_btn:hover{
+    color: white;
+    border: 3px solid darkgreen;
+    background: transparent;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+.checkbox{
+    display: none;
+}
+
+@media screen and (max-width: 953px){
+    .nav-marvio{
+        font-size: 32px;
+    }
+    nav li a{
+        font-size: 18px;
+    }
+    nav .contact_btn{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 820px){
+        .checkbtn{
+            display: block;
+            margin-left: 150px;
+        }
+        nav-marvio{
+            padding-left: 10px;
+        }
+        nav ul{
+            z-index: 1000;                 
+            position: fixed;           
+            width: 60%;              
+            height: 70vh;        
+            background-color: black;
+            top: 50px; right: -100%;
+            padding:20px;       
+            transition: all .5s;
+        }  
+        nav li{
+            text-align: center;
+            display: block;
+            float: left;    
+            width: 230px;
+            height: 65px;
+            padding: 5px;
+        }
+        nav .contact_btn{
+            width: 85%;
+            margin-top: 10px;
+        }
+        nav li a{
+            font-size: 20px;
+            color: white;
+        }
+        .checkbox:checked ~ ul{
+            right: 0;
+        }
+}
