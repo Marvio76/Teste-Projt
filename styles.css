@@ -13,7 +13,7 @@ nav{
     justify-content: space-around;
     top: 0;
     width: 100%;
-    color: white;
+    color: #fffce1;
     font-size: large;
     overflow: hidden;
     padding: 10px;
@@ -32,15 +32,15 @@ li{
 li a{
     padding: 15px;
     display: block;
-    color: white;
+    color: #7c7c6f;
 }
 li a:hover{
-    color: darkgreen;
+    color: #fffce1;
 }
 
 .contact_btn{
     padding: 10px 30px;
-    color: white;
+    color: #fffce1;
     margin-left: 8rem;
     background-color: black ;
     border: 3px solid darkgreen;
@@ -50,7 +50,7 @@ li a:hover{
     transition: 1s;
 }
 .contact_btn:hover{
-    color: whitesmoke;
+    color: #fffce1;
     border: 3px solid #870273;
     background: transparent;
 }
@@ -63,6 +63,9 @@ li a:hover{
 }
 .checkbox{
     display: none;
+}
+.nav-span{
+    color: #7c7c6f;
 }
 
 @media screen and (max-width: 953px){
@@ -103,12 +106,12 @@ li a:hover{
             padding: 5px;
         }
         nav .contact_btn{
-            width: 85%;
-            margin-top: 10px;
+            width: 90%;
+            margin-top: 15px;
         }
         nav li a{
             font-size: 20px;
-            color: white;
+            color: #7c7c6f;
         }
         .checkbox:checked ~ ul{
             right: 0;
