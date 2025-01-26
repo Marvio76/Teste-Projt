@@ -1,0 +1,31 @@
+.sobre-mim{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+.Sobre{
+    padding: 6rem 5%;
+}
+.stilo{
+    color: #97EDDA;
+}
+.descrition-inter p{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+.icones-inter img{
+    border-radius: 50%;
+}
+@media screen and (max-width: 400px){
+    .descrition-inter p{
+        font-size: 1.1rem;
+        margin-bottom: 3px;
+    }
+    .Sobre{
+        padding: 2rem 5%;
+    }
+    .flex{
+        gap: 10px;
+    }
+}
