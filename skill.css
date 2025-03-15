@@ -32,4 +32,11 @@
         height: 100px;
         width: 100px;
     }
+    .Skills{
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 3%;
+        margin-top: 5%;
+    }
 }
